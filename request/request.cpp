@@ -18,10 +18,12 @@ std::tuple<Request, status::Type> RequestConstruct::operator()(const std::string
     return std::make_tuple(mRequest, mStatus);
 }
 
-std::tuple<Request, status::Type> build_request(const std::string_view & request_sv, const std::string_view & document_sv_root) {
+std::tuple<Request, status::Type> build_request(const std::string_view &request_cv, const std::string & document_sv_root){
     RequestConstruct rb;
-    return rb(request_sv, document_sv_root);
+    return rb(request_cv, document_sv_root);
 }
+
+
 
 
 

@@ -143,6 +143,33 @@ fast_web_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/build
 .PHONY : fast_web_server/fast
 
+http/http.o: http/http.cpp.o
+
+.PHONY : http/http.o
+
+# target to build an object file
+http/http.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/http/http.cpp.o
+.PHONY : http/http.cpp.o
+
+http/http.i: http/http.cpp.i
+
+.PHONY : http/http.i
+
+# target to preprocess a source file
+http/http.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/http/http.cpp.i
+.PHONY : http/http.cpp.i
+
+http/http.s: http/http.cpp.s
+
+.PHONY : http/http.s
+
+# target to generate assembly for a file
+http/http.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/http/http.cpp.s
+.PHONY : http/http.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -170,6 +197,141 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+request/request.o: request/request.cpp.o
+
+.PHONY : request/request.o
+
+# target to build an object file
+request/request.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/request/request.cpp.o
+.PHONY : request/request.cpp.o
+
+request/request.i: request/request.cpp.i
+
+.PHONY : request/request.i
+
+# target to preprocess a source file
+request/request.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/request/request.cpp.i
+.PHONY : request/request.cpp.i
+
+request/request.s: request/request.cpp.s
+
+.PHONY : request/request.s
+
+# target to generate assembly for a file
+request/request.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/request/request.cpp.s
+.PHONY : request/request.cpp.s
+
+response/response.o: response/response.cpp.o
+
+.PHONY : response/response.o
+
+# target to build an object file
+response/response.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/response/response.cpp.o
+.PHONY : response/response.cpp.o
+
+response/response.i: response/response.cpp.i
+
+.PHONY : response/response.i
+
+# target to preprocess a source file
+response/response.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/response/response.cpp.i
+.PHONY : response/response.cpp.i
+
+response/response.s: response/response.cpp.s
+
+.PHONY : response/response.s
+
+# target to generate assembly for a file
+response/response.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/response/response.cpp.s
+.PHONY : response/response.cpp.s
+
+server/server.o: server/server.cpp.o
+
+.PHONY : server/server.o
+
+# target to build an object file
+server/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/server/server.cpp.o
+.PHONY : server/server.cpp.o
+
+server/server.i: server/server.cpp.i
+
+.PHONY : server/server.i
+
+# target to preprocess a source file
+server/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/server/server.cpp.i
+.PHONY : server/server.cpp.i
+
+server/server.s: server/server.cpp.s
+
+.PHONY : server/server.s
+
+# target to generate assembly for a file
+server/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/server/server.cpp.s
+.PHONY : server/server.cpp.s
+
+socket/scope_guard.o: socket/scope_guard.cpp.o
+
+.PHONY : socket/scope_guard.o
+
+# target to build an object file
+socket/scope_guard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/socket/scope_guard.cpp.o
+.PHONY : socket/scope_guard.cpp.o
+
+socket/scope_guard.i: socket/scope_guard.cpp.i
+
+.PHONY : socket/scope_guard.i
+
+# target to preprocess a source file
+socket/scope_guard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/socket/scope_guard.cpp.i
+.PHONY : socket/scope_guard.cpp.i
+
+socket/scope_guard.s: socket/scope_guard.cpp.s
+
+.PHONY : socket/scope_guard.s
+
+# target to generate assembly for a file
+socket/scope_guard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/socket/scope_guard.cpp.s
+.PHONY : socket/scope_guard.cpp.s
+
+socket/socket.o: socket/socket.cpp.o
+
+.PHONY : socket/socket.o
+
+# target to build an object file
+socket/socket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/socket/socket.cpp.o
+.PHONY : socket/socket.cpp.o
+
+socket/socket.i: socket/socket.cpp.i
+
+.PHONY : socket/socket.i
+
+# target to preprocess a source file
+socket/socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/socket/socket.cpp.i
+.PHONY : socket/socket.cpp.i
+
+socket/socket.s: socket/socket.cpp.s
+
+.PHONY : socket/socket.s
+
+# target to generate assembly for a file
+socket/socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fast_web_server.dir/build.make CMakeFiles/fast_web_server.dir/socket/socket.cpp.s
+.PHONY : socket/socket.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +341,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fast_web_server"
+	@echo "... http/http.o"
+	@echo "... http/http.i"
+	@echo "... http/http.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... request/request.o"
+	@echo "... request/request.i"
+	@echo "... request/request.s"
+	@echo "... response/response.o"
+	@echo "... response/response.i"
+	@echo "... response/response.s"
+	@echo "... server/server.o"
+	@echo "... server/server.i"
+	@echo "... server/server.s"
+	@echo "... socket/scope_guard.o"
+	@echo "... socket/scope_guard.i"
+	@echo "... socket/scope_guard.s"
+	@echo "... socket/socket.o"
+	@echo "... socket/socket.i"
+	@echo "... socket/socket.s"
 .PHONY : help
 
 

@@ -42,7 +42,7 @@ void Socket::WriteExactData(const void *data, size_t length) const {
 
         size_t bytes_wrote = Write(buff_begin, length - bytes_wrote);
         if (bytes_wrote == 0) {
-            throw "Unable to write " + std::to_string(length) + " bytes":
+            throw "Unable to write " + std::to_string(length) + " bytes";
         }
         bytes_wrote += bytes_wrote;
     }

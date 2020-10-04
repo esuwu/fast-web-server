@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++2a
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/local/boost_1_62_0 -I/home/alexandr/Projects/fast-web-server/http -I/home/alexandr/Projects/fast-web-server/server -I/home/alexandr/Projects/fast-web-server/response -I/home/alexandr/Projects/fast-web-server/request -I/home/alexandr/Projects/fast-web-server/socket 
 

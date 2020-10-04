@@ -44,6 +44,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/boost_1_62_0"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/http"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/server"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/response"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/request"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/socket"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -66,6 +72,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/boost_1_62_0"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/http"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/server"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/response"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/request"/>
+					<Add directory="/home/alexandr/Projects/fast-web-server/socket"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -82,7 +94,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/http/http.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/http/http.h">
+			<Option target="fast_web_server"/>
+		</Unit>
 		<Unit filename="/home/alexandr/Projects/fast-web-server/main.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/request/request.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/request/request.h">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/response/response.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/response/response.h">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/server/server.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/server/server.h">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/socket/scope_guard.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/socket/scope_guard.h">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/socket/socket.cpp">
+			<Option target="fast_web_server"/>
+		</Unit>
+		<Unit filename="/home/alexandr/Projects/fast-web-server/socket/socket.h">
 			<Option target="fast_web_server"/>
 		</Unit>
 		<Unit filename="/home/alexandr/Projects/fast-web-server/CMakeLists.txt">

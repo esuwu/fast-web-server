@@ -13,7 +13,7 @@ class Request {
 
 };
 
-std::tuple<Request, const std::string> build_request(const std::string_view &request_cv, const std::string & document_sv_root);
+std::tuple<Request, status::Type> build_request(const std::string_view &request_cv, const std::string & document_sv_root);
 
 class RequestConstruct {
  public:

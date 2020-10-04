@@ -30,6 +30,10 @@ FileScopeGuard& FileScopeGuard::operator=(int fd)  {
     return *this;
 }
 
+FileScopeGuard::operator int() const {
+    return mFD;
+}
+
 void FileScopeGuard::Close() {
     if (mFD == -1) {
         return;
