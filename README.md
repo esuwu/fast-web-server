@@ -6,6 +6,10 @@
 - make
 - ./fast-web-server # works on 8081 port
 
+## config:
+- httpd.conf
+
+
 ## Functional testing:
 ```
 test_directory_index (__main__.HttpServer)
