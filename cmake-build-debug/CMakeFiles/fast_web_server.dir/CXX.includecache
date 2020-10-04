@@ -10,16 +10,26 @@
 string
 -
 
-/home/alexandr/Projects/fast-web-server/main.cpp
-iostream
--
-math.h
--
-server/server.h
-/home/alexandr/Projects/fast-web-server/server/server.h
+/home/alexandr/Projects/fast-web-server/request/request.h
 string
 -
-fstream
+../http/http.h
+/home/alexandr/Projects/fast-web-server/http/http.h
+
+/home/alexandr/Projects/fast-web-server/server/server.cpp
+server.h
+/home/alexandr/Projects/fast-web-server/server/server.h
+csignal
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+iostream
+-
+../request/request.h
+/home/alexandr/Projects/fast-web-server/request/request.h
+unistd.h
 -
 
 /home/alexandr/Projects/fast-web-server/server/server.h

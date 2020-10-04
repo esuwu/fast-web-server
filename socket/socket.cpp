@@ -1,6 +1,3 @@
-//
-// Created by alexandr on 01.10.2020.
-//
 
 #include "socket.h"
 
@@ -36,15 +33,15 @@ size_t Socket::Write(const void *data, size_t length) const {
 }
 
 void Socket::WriteExactData(const void *data, size_t length) const {
-    size_t bytes_wrote = 0;
-    while(bytes_wrote != length) {
-        const void * buff_begin = static_cast<const char *>(data) + bytes_wrote;
+    size_t bytes_wrote_total = 0;
+    while(bytes_wrote_total != length) {
+        const void * buff_begin = static_cast<const char *>(data) + bytes_wrote_total;
 
-        size_t bytes_wrote = Write(buff_begin, length - bytes_wrote);
+        size_t bytes_wrote = Write(buff_begin, length - bytes_wrote_total);
         if (bytes_wrote == 0) {
             throw "Unable to write " + std::to_string(length) + " bytes";
         }
-        bytes_wrote += bytes_wrote;
+        bytes_wrote_total += bytes_wrote;
     }
 }
 

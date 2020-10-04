@@ -1,4 +1,3 @@
-
 #include "server.h"
 #include <csignal>
 #include <sys/socket.h>

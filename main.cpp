@@ -56,7 +56,6 @@ int main() {
     auto config = ParseConfig();
 
 
-
     try {
         Server::Start(address, port, config.maxConnections, config.threadLimit, config.documentRoot).Run();
     }
