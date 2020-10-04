@@ -7,6 +7,7 @@
 - ./fast-web-server # works on 8081 port
 
 ## Functional testing:
+```
 test_directory_index (__main__.HttpServer)
 directory index file exists ... ok
 test_document_root_escaping (__main__.HttpServer)
@@ -60,8 +61,9 @@ Server header exists ... ok
 Ran 24 tests in 0.024s
 
 OK
-
+```
 ## Loading tesing fast-web-server:
+```
 This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -112,8 +114,9 @@ Percentage of the requests served within a certain time (ms)
   80%      0
   90%      0
   95%      1
-
+```
 ## Loading tesing nginx:
+```
 This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -168,3 +171,4 @@ Percentage of the requests served within a certain time (ms)
   98%     32
   99%     32
  100%     47 (longest request)
+```
