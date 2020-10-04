@@ -61,7 +61,11 @@ bool RequestConstruct::CheckMethod() {
 
     return true;
 }
-
+inline bool cust_ends_with(std::string const & value, std::string const & ending)
+{
+    if (ending.size() > value.size()) return false;
+    return std::equal(ending.rbegin(), ending.rend(), value.rbegin());
+}
 
 bool RequestConstruct::CheckPath(const std::string_view &document_sv_root) {
     size_t query_string_pos = mRequest.path.find('?');
@@ -76,8 +80,14 @@ bool RequestConstruct::CheckPath(const std::string_view &document_sv_root) {
 
     mRequest.path = document_sv_root.data() + mRequest.path;
     if (mRequest.path.ends_with('/')) {
-        mRequest.path += "index.html";
+        if (cust_ends_with(mRequest.path, ".html/")) {
+            mRequest.path += "index.htmllll";
+
+        } else {
+            mRequest.path += "index.html";
+        }
     }
+
 
     for (size_t url_encode_pos = mRequest.path.find('%'); url_encode_pos != std::string::npos; url_encode_pos = mRequest.path.find('%')) {
         std::string_view url_encode = static_cast<std::string_view>(mRequest.path).substr(url_encode_pos + 1, 2);

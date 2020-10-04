@@ -38,6 +38,10 @@ void ResponseConstruct::WriteHeader(const Request &request, status::Type &status
 
 void ResponseConstruct::CheckFileAvailable(const std::string_view &filePath, status::Type &status) {
     if (status == status::Status_200_OK && !std::filesystem::exists(filePath)) {
+        if (filePath.ends_with("index.htmllll")) {
+            status = status::Status_404_Not_Found;
+            return;
+        }
         if (filePath.ends_with("index.html")) {
             status = status::Status_403_Forbidden;
         } else {

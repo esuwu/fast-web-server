@@ -4,6 +4,7 @@
 #include <arpa/inet.h>
 #include <iostream>
 #include "../request/request.h"
+#include "../response/response.h"
 #include <unistd.h>
 using namespace std;
 #define EPOLL_SIZE 128
@@ -35,7 +36,7 @@ Server::Server(const string_view &address,
         Open(address, port);
         Listen(static_cast<int>(max_connection));
         CreateEpoll();
-        AddEpoll(max_connection, EPOLLIN);
+        AddEpoll(mSockFD, EPOLLIN);
     }
     catch (std::string err) {
         cerr << err << endl;
@@ -188,7 +189,8 @@ void Server::Work(const string &doc_root) {
         Socket connection(fd);
         string msg = connection.ReadAllBytes(4096);
         auto [request, status] = build_request(msg, doc_root);
-
+        //TODO
+        build_and_send_resp(connection, request, status);
     }
 
 }
